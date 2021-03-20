@@ -63,3 +63,9 @@ User selected - 13299 || Most similar user returned - 14156
 - Products purchased by most similar user - ['NATURAL SLATE CHALKBOARD LARGE' 'NATURAL SLATE HEART CHALKBOARD',  'PICNIC BASKET WICKER LARGE' 'ROSES REGENCY TEACUP AND SAUCER',  'ROUND SNACK BOXES SET OF4 WOODLAND']
 
 `Therefore, we can see that user 14156.0 is most similar to user 13299 because 14156 has purchased ALL the same products as user 13299`
+
+## Acknowledgements
+
+1. Udacity Nanodegree Programme: https://classroom.udacity.com/nanodegrees/nd025/dashboard/overview
+2. Article talking about Market Basket Analysis: https://pbpython.com/market-basket-analysis.html
+3. Data: http://archive.ics.uci.edu/ml/datasets/Online+Retail
