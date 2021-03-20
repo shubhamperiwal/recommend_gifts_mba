@@ -2,7 +2,7 @@
 
 This project aims to build a recommender for a grocery store. It will recommend products based on your previous purchases as well as your current cart.
 
-<b> Project origin - </b> Project originated while I was learning recommendation system and was wondering how that works on a real time basis when the products in my cart keeps changing
+<b> Project origin - </b> The project originated while I was learning recommendation systems and was wondering how that works on a real-time basis when the products in my cart keep changing.
 
 ## Problem Statement
 
