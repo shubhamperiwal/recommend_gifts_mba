@@ -1,6 +1,13 @@
-# Recommend Gifts - Market Basket Analysis
+# Gifts Recommendation System
 
-My code Market Basket Analysis and Recommendation Engines to recommend gifts to purchase for any occasion.
+This project aims to build a recommender for a grocery store. It will recommend products based on your previous purchases as well as your current cart.
+
+<b> Project origin - </b> Project originated while I was learning recommendation system and was wondering how that works on a real time basis when the products in my cart keeps changing
+
+## Problem Statement
+
+The main problem this project aims to solve is build a dynamic robust recommender which provides personalised recommendations even for new users. Moreover, it uses Market Basket Analysis instead of product-similarity so it can be easily updated as items are added or removed from hypothetical cart
+
 
 ## Data Description
 
@@ -18,3 +25,41 @@ This is a transnational data set which contains all the transactions occurring b
 <b>UnitPrice: </b>Unit price. Numeric, Product price per unit in sterling.<br/>
 <b>CustomerID: </b>Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.<br/>
 <b>Country: </b>Country name. Nominal, the name of the country where each customer resides.<br/>
+
+## Model Information
+
+<ul> Libraries used 
+  <li> Basic EDA and analysis - pandas, numpy, matplotlib </li>
+  <li>Market Basket Analysis - mlxtend </li>
+  <li>Recommendation System - native python and pandas </li>
+  <li> Model Evaluation - sklearn </li>
+</ul>
+
+It uses the following recommendations:
+
+- New User - empty cart - Recommend popular products
+- New User - items in cart - Market Basket Analysis to recommend products
+- Old User - User user recommendations
+
+## Summary of results
+
+![Screenshot 2021-03-20 at 3 54 29 PM](https://user-images.githubusercontent.com/24404521/111863124-8f766c00-8994-11eb-972a-305c0b6edb60.png)
+We can notice a trend of number of gifts increasing towards the second half after October in preparation for the holiday season.
+And the trend finally peaks in early December when people have their Christmas shopping
+
+![Screenshot 2021-03-20 at 3 56 58 PM](https://user-images.githubusercontent.com/24404521/111863176-e8460480-8994-11eb-8463-62e4807ce8db.png)
+<i>`WORLD WAR 2 GLIDERS ASSTD DESIGNS` is the most popular products purchased </i>
+
+![Screenshot 2021-03-20 at 3 56 30 PM](https://user-images.githubusercontent.com/24404521/111863166-d82e2500-8994-11eb-9c93-367696fef3a7.png)
+<i>Here we can see rules for some of the products</i>
+
+Results of recommendations for a selected user: <br/>
+User selected - 13299 || Most similar user returned - 14156
+
+- Products purchased by selected user - ['NATURAL SLATE CHALKBOARD LARGE', 'NATURAL SLATE HEART CHALKBOARD', 'PICNIC BASKET WICKER LARGE', 'ROSES REGENCY TEACUP AND SAUCER', 'ROUND SNACK BOXES SET OF4 WOODLAND']
+
+- Products recommended - ['10 COLOUR SPACEBOY PEN' '12 COLOURED PARTY BALLOONS',  '12 EGG HOUSE PAINTED WOOD' '12 IVORY ROSE PEG PLACE SETTINGS',  '12 MESSAGE CARDS WITH ENVELOPES']
+
+- Products purchased by most similar user - ['NATURAL SLATE CHALKBOARD LARGE' 'NATURAL SLATE HEART CHALKBOARD',  'PICNIC BASKET WICKER LARGE' 'ROSES REGENCY TEACUP AND SAUCER',  'ROUND SNACK BOXES SET OF4 WOODLAND']
+
+`Therefore, we can see that user 14156.0 is most similar to user 13299 because 14156 has purchased ALL the same products as user 13299`
