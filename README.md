@@ -1,4 +1,4 @@
-# Gifts Recommendation System
+# *Robust* Gifts Recommendation System
 
 This project aims to build a recommender for a grocery store. It will recommend products based on your previous purchases as well as your current cart.
 
